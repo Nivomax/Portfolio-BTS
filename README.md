@@ -1,5 +1,5 @@
 # Portfolio BTS SIO - Maxime MADUREIRA
-<img src ="./assets/img/mockup/">
+<img src ="./assets/img/mockup.png">
 
 ## A propos du projet
 Ce portfolio est développé dans le cadre de mon épreuve de BTS SIO . Il vise à présenter mes compétences techniques ainsi que les projets sur lesquels j'ai travaillé au cours de ma formation. Ce site est une vitrine de mon savoir-faire en informatique.
