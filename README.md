@@ -1,12 +1,12 @@
 # Portfolio BTS SIO - Maxime MADUREIRA
-<img src ="./assets/img/Image 08-07-2024 à 18.24.png/">
+<img src ="./assets/img/mockup/">
 
 ## A propos du projet
 Ce portfolio est développé dans le cadre de mon épreuve de BTS SIO . Il vise à présenter mes compétences techniques ainsi que les projets sur lesquels j'ai travaillé au cours de ma formation. Ce site est une vitrine de mon savoir-faire en informatique.
 
 ## Technologies utilisées
 - HTML5
-- CSS3
+- CSS
 - JavaScript
 - PHP
 - Bootstrap

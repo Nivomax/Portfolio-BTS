@@ -55,7 +55,7 @@
 
     <!-- ========== main ========== -->
     <main id="main">
-        <!-- ========== section E4 ========== -->
+        <!-- ========== section VM ========== -->
         <section id="portfolio-details" class="portfolio-details">
             <div class="container">
                 <div class="portfolio-description">
@@ -83,65 +83,164 @@
         <section id="resume1" class="resume1">
             <div class="container">
                 <div class="section-title">
-                    <h2>Stage de première année </h2>
+                    <h2>Installation DNS</h2>
                 </div>
-                <h4>Présentation de l'entreprise</h4>
+
+                <h4>Qu'est-ce qu'un DNS primaire ?</h4>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio recusandae neque perspiciatis doloribus maxime vero voluptates vitae necessitatibus minima ad fuga repellendus atque, accusamus nesciunt molestias ab enim nulla vel sequi expedita sed. Accusantium doloribus, culpa aut iusto eos cum saepe itaque, ab ullam expedita quos aperiam illo iure a? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, itaque impedit! Quas non facere voluptatum, soluta reprehenderit amet. Sequi, similique?
+                    Le DNS primaire (ou serveur DNS primaire) est un serveur qui contient l'enregistrement principal d'une zone de noms de domaine. Il est responsable de la gestion et de la distribution des informations sur les noms de domaine et leurs adresses IP associées.
                 </p>
-                <h4>Présentation des différents postes informatique</h4>
+                <br>
+                <h4>À quoi ça sert ?</h4>
+                <p>Le DNS (Domain Name System) est un système qui traduit les noms de domaine (ex : www.google.com) en adresses IP compréhensibles par les machines (ex : 142.250.185.14).</p>
+                <p>Un DNS primaire joue un rôle crucial dans ce processus en : <br>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eaque amet unde suscipit, laudantium voluptatibus obcaecati sit eum et possimus nostrum explicabo, placeat, quas labore dignissimos magnam assumenda reiciendis deserunt praesentium! Magnam dolorum sint deleniti repudiandae saepe quo, voluptatem pariatur quidem rem, tempora itaque maiores culpa dolore. Reiciendis, maxime aliquam.</p>
+                    - Stockant les enregistrements DNS d’un domaine (A, CNAME, MX, TXT, etc.). <br>
+                    - Répondant aux requêtes DNS des utilisateurs pour diriger le trafic vers les bons serveurs. <br>
+                    - Synchronisant les données avec un DNS secondaire pour assurer la redondance et éviter les pannes.</p>
+                    <br>
+                <h4>Différence entre DNS primaire et secondaire</h4>
+                <p>DNS primaire : Il détient la version "maître" des enregistrements DNS et peut être modifié directement. <br>
+                    DNS secondaire : Il est une copie du DNS primaire et sert de sauvegarde en cas de défaillance du primaire.</p>
+                    <br>
+                    <h4>Exemple d'utilisation</h4>
+                    <p>Si tu tapes www.example.com dans ton navigateur : <br>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatum sapiente, esse amet aliquid sequi, nihil tempora excepturi quia, assumenda incidunt ducimus maiores? Consequatur aliquam, cupiditate praesentium illo repudiandae magni eum dicta quia et nulla aperiam vero doloremque rem, modi eos laudantium! Architecto ipsam molestiae ratione ut, nostrum temporibus soluta.</p>
-            </div>
+                        1- Ton appareil envoie une requête au serveur DNS primaire du domaine. <br>
+                        2- Le serveur DNS retourne l'adresse IP correspondante. <br>
+                        3- Ton navigateur se connecte à cette adresse IP et affiche le site.</p>
         </section>
-        <!-- ========== Fin section ========== -->
-
-        <!-- ========== Resume Section  ========== -->
-        <section id="resume2" class="resume2">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Apprentie en deuxième année</h2>
-                </div>
-                <h4>Présentation de l'entreprise</h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas laudantium atque dolor, velit mollitia sit deleniti natus ex error doloribus omnis qui, adipisci ad eos porro veritatis ea quis ipsa laborum. Voluptate ducimus dolorum accusamus? Cupiditate illum, recusandae voluptate quibusdam quidem accusamus dolores, pariatur doloribus quae, voluptatem nesciunt obcaecati error.Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic accusantium, delectus iusto nihil culpa tempora quae ratione magnam, voluptatibus ipsa libero deleniti quaerat atque blanditiis repudiandae asperiores expedita? Veritatis, dignissimos.
-                </p>
-                <h4>Présentation des différents postes informatique</h4>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eaque amet unde suscipit, laudantium voluptatibus obcaecati sit eum et possimus nostrum explicabo, placeat, quas labore dignissimos magnam assumenda reiciendis deserunt praesentium! Magnam dolorum sint deleniti repudiandae saepe quo, voluptatem pariatur quidem rem, tempora itaque maiores culpa dolore. Reiciendis, maxime aliquam.</p>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatum sapiente, esse amet aliquid sequi, nihil tempora excepturi quia, assumenda incidunt ducimus maiores? Consequatur aliquam, cupiditate praesentium illo repudiandae magni eum dicta quia et nulla aperiam vero doloremque rem, modi eos laudantium! Architecto ipsam molestiae ratione ut, nostrum temporibus soluta.</p>
-            </div>
-        </section>
-        <!-- ========== Fin Seciton  =========== -->
-
-        <!-- ========== Documents E4  ========== -->
         <section class="files" id="files" >
             <div class="container">
                 <div class="section-title">
-                    <h2>Documents annexes</h2>
                     <div class="container-btn">
                         <ul>
-                            <a href="#">
-                                <li>Tableau de Synthèse - Épreuve E4
-                                </li>
+                            <a href="../assets/TP/Procédure DNS primaire.pdf">
+                                <li>Configuration DNS primaire</li>
                             </a>
-                            <a href="#">
-                                <li>Rapport de Stage 1ÉRE ANNÉE</li>
+                            <a href="../assets/TP/Procédure DNS secondaire.pdf">
+                                <li>Configuration DNS secondaire</li>
                             </a>
-                            <a href="#">
-                                <li>Rapport de Stage 2ÈME ANNÉE</li>
-                            </a>
+
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
-    <!-- ========== Fin main ========== -->
 
-    
+        <!-- ========== Fin section ========== -->
+
+        <!-- ========== Resume2 Section  ========== -->
+        <section id="resume2" class="resume2">
+            <div class="container">
+                <div class="section-title">
+                    <h2>DHCP & DHCP failover</h2>
+                </div>
+                <h4>Qu'est-ce qu'un DHCP ?</h4>
+                <p>
+                    Le DHCP (Dynamic Host Configuration Protocol) est un protocole réseau qui attribue automatiquement des adresses IP et d’autres paramètres réseau (passerelle, DNS, etc.) aux appareils connectés à un réseau.                </p>
+               
+                <h4>À quoi ça sert ?</h4>
+
+                <p>Le DHCP simplifie la gestion des adresses IP en : <br>
+
+                    1- Évitant la configuration manuelle de chaque appareil. <br>
+                    2- Réduisant les conflits d’adresses IP en attribuant des IP uniques. <br>
+                    3- Fournissant automatiquement des paramètres réseau comme la passerelle et les DNS. <br>
+                    4- Facilitant l’administration réseau grâce à une gestion centralisée des adresses IP. <br>
+                </p>
+
+                <h4>Comment fonctionne un DHCP ?</h4>
+
+                <p>Lorsqu’un appareil rejoint un réseau : <br>
+
+                    1- Il envoie une requête DHCP pour demander une adresse IP. <br>
+                    2- Le serveur DHCP attribue une adresse IP et d’autres paramètres réseau. <br>
+                    3- L’appareil utilise ces informations pour communiquer sur le réseau. <br>
+                    4- L’adresse IP est temporaire et peut être renouvelée avant son expiration.
+                </p>
+
+                    <h4>Qu’est-ce que le DHCP Failover ?</h4>
+                    <p>Le DHCP Failover est une configuration permettant à deux serveurs DHCP de fonctionner ensemble pour assurer une haute disponibilité et éviter les pannes.
+
+                    </p>
+
+                    <h4>À quoi ça sert ?</h4>
+                    <p>Un DHCP Failover garantit : <br>
+
+                        1- Une tolérance aux pannes : Un second serveur DHCP prend le relais si le premier tombe en panne. <br>
+                        2- Une répartition de charge : Les adresses IP peuvent être distribuées par deux serveurs pour améliorer les performances. <br>
+                        3- Une continuité de service : Les appareils obtiennent toujours une adresse IP, même en cas de problème réseau.
+                    </p>
+
+                        <h4>Modes de fonctionnement du DHCP Failover</h4>
+                        <p>- Mode Load Balance : Les deux serveurs DHCP distribuent les adresses IP simultanément (ex: 50% chacun). <br>
+                        - Mode Hot Standby : Un serveur est actif et l’autre est en attente. Si le premier tombe en panne, le second prend automatiquement le relais.
+                    </p>
+            </div>
+        </section>
+
+        <section class="files" id="files" >
+            <div class="container">
+                <div class="section-title">
+                    <div class="container-btn">
+                        <ul>
+                            <a href="../assets/TP/DHCP-failover.pdf">
+                                <li>Configuration DHCP failover</li>
+                            </a>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- ========== Fin section ========== -->
+
+   <!-- ========== Resume2 Section  ========== -->
+        <section id="resume2" class="resume2">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Apache</h2>
+                </div>
+                <h4>Qu'est-ce qu'Apache ?</h4>
+                <p>
+                    Apache HTTP Server (souvent appelé Apache) est un serveur web open-source qui permet d’héberger et de diffuser des sites web sur Internet ou un réseau local. Il est l’un des serveurs web les plus utilisés au monde.Apache HTTP Server (souvent appelé Apache) est un serveur web open-source qui permet d’héberger et de diffuser des sites web sur Internet ou un réseau local. Il est l’un des serveurs web les plus utilisés au monde.               
+                <h4>À quoi ça sert ?</h4>
+
+                <p>Un serveur Apache joue un rôle clé dans l’hébergement de sites web en :<br>
+
+                    1- Gérant les requêtes HTTP envoyées par les navigateurs (Chrome, Firefox, etc.).<br>
+                    2- Servant des fichiers HTML, CSS, JavaScript et autres ressources aux visiteurs.v<br>
+                    3- Permettant l’exécution de scripts côté serveur (PHP, Python, Perl, etc.). <br>
+                    4- Offrant une gestion avancée des accès et des permissions (authentification, restriction d’accès).<br>
+                    5- Supportant des modules supplémentaires pour améliorer ses fonctionnalités (sécurité, cache, compression, etc.). <br>
+                </p>
+
+                <h4>Comment fonctionne Apache ?</h4>
+
+                <p> 1- Un utilisateur entre une URL dans son navigateur (ex: www.example.com).<br>
+                    2- Le navigateur envoie une requête HTTP au serveur Apache.<br>
+                    3- Apache traite la requête et recherche la page demandée.<br>
+                    4- Il renvoie la page web au navigateur, qui l’affiche à l’utilisateur.
+                </p>
+            </div>
+        </section>
+
+        <section class="files" id="files" >
+            <div class="container">
+                <div class="section-title">
+                    <div class="container-btn">
+                        <ul>
+                            <a href="../assets/TP/apache.pdf">
+                                <li>Configuration Apache</li>
+                            </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========== Fin Secton  =========== -->
+    </main>
+
+        <!-- ========== Fin main ========== -->
 </body>
 </html>
